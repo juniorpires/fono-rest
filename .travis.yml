@@ -1,8 +1,12 @@
 language: php
+
 php:
 - 7.1
 
-
+cache:
+  directories:
+    - $HOME/.composer/cache
+    
 script:
 - bash ./deploy.sh
 true:
