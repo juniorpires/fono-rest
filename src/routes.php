@@ -5,7 +5,7 @@ use Slim\Http\Response;
 
 // Routes
 
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
+/*$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
     // Sample log message
     $this->logger->info("Slim-Skeleton '/' route");
 
@@ -19,7 +19,7 @@ $app->get('/[{name}]', function (Request $request, Response $response, array $ar
 |                                                       |
 |                Route's - Evolução                     |
 |______________________________________________________*/
-$app->group('/evolucao', function () use ($app) {
+/*$app->group('/evolucao', function () use ($app) {
     $app->get('/evolucoes/{idPaciente}/{idFonoaudiologo}', 'getEvolucoes');
     $app->get('/evolucao/{id}', 'getEvolucao');
     $app->post('/create', 'addEvolucao');
@@ -30,7 +30,7 @@ $app->group('/evolucao', function () use ($app) {
 |                                                       |
 |               Route's - Fonoaudiologo                 |
 |______________________________________________________*/
-$app->group('/fonoaudiologo', function () use ($app) {
+/*$app->group('/fonoaudiologo', function () use ($app) {
     $app->get('/fonoaudiologos', 'getFonoaudiologos');
     $app->get('/fonoaudiologo/{id}', 'getFonoaudiologo');
     $app->post('/create', 'addFonoaudiologo');
@@ -41,7 +41,7 @@ $app->group('/fonoaudiologo', function () use ($app) {
 |                                                       |
 |                 Route's - Paciente                    |
 |______________________________________________________*/
-$app->group('/paciente', function () use ($app) {
+/*$app->group('/paciente', function () use ($app) {
     $app->get('/pacientes', 'getPacientes');
     $app->get('/paciente/{id}', 'getPaciente');
     $app->post('/create', 'addPaciente');
