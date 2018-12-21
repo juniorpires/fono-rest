@@ -24,6 +24,6 @@ install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -aev --quiet --delete-after ssh './deploy_key -p 2222'  ./* jrpiresc@108.167.188.84:~/public_html/rest
+  script: rsync -ae --quiet --delete-after ssh './deploy_key -p 2222'  ./* jrpiresc@108.167.188.84:~/public_html/rest
   on:
     branch: master
